@@ -47,7 +47,7 @@
 
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     
 }
 
@@ -82,3 +82,78 @@
     color: blanchedalmond;
 
 } */
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video{
+    flex-grow: 2; /* toma el espacio sobrante dentro del container, divide entre el numero de items dentro del mismo y al item con la propiedad flex-grow se le asignará un espacio para crecer tantas veces más como el valor asignado (en el caso que lo necesite). En este caso, este item se le asignará del espacio disponible 2 veces más que a todos los otros    */
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
+}
+/* RESPONSIVE */
+@media (max-width:768px) {
+
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav{
+        flex-direction: column;
+
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: row;
+        
+    }
+
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height:auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        align-items: initial;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
