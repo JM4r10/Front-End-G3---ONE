@@ -1,0 +1,84 @@
+/* .headerPrincipal-titulo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerPrincipal-nav{
+    display: inline-block;
+    vertical-align: middle;
+    
+} */
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.headerPrincipal-nav{
+    display: flex;
+
+}
+/* 
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+} */
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm-legend{
+    width: 25%;
+    
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column; /* indica al navegador la direccion en la que debe alinear los elementos del flexbox, default row */
+    height: 260px;
+    flex-wrap: wrap; /* indica al navegador que una vez la columna alcance la altura definida, haga un quiebre y coloque la siguiente columna a la misma altura que la anterior   */
+}
+
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+
+/* .grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 50px;
+    width: 12%;
+    margin: 1px 1px;
+    background-color: green;
+    color: blanchedalmond;
+
+} */
