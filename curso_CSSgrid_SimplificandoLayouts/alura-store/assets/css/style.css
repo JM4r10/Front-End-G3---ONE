@@ -7,22 +7,40 @@
     "contenido"
     "rodapie";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;  /* The full form of VH is viewport height. It works like the percentage unit as well. Specifying 10vh is equivalent to occupying 10% of entire visible screen height. */
+    grid-template-rows: 50px 100vh subgrid;  /* The full form of VH is viewport height. It works like the percentage unit as well. Specifying 10vh is equivalent to occupying 10% of entire visible screen height. */
     /* auto = ajusta tamaño del template de acuerdo al contwndio del mismo */
 }
 
-.encabezado {
-    /* background: #00cc99; */
+.encabezado {    
+    align-items: center;
+    display: flex;
     grid-area: encabezado;
+    padding: 1rem 2rem;
     
 }
+
+.menu__link{
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #0073e6;
+}
+
 .contenido {
     /* background: #ff8080; */
     grid-area: contenido;
+    padding: 0 2rem;
 }
 
 .rodapie { 
     /* background: #0099ff; */
+    background: #fdfdfd;
+    color: #333333;
     grid-area: rodapie;
+    padding: 1rem;
+    text-align: center;
     
+
 }
